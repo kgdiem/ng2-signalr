@@ -5,6 +5,7 @@
 [![Build Status](https://travis-ci.org/HNeukermans/ng2-signalr.svg?branch=master)](https://travis-ci.org/HNeukermans/ng2-signalr)
 # ng2-signalr
 An angular typescript library that allows you to connect to Asp.Net SignalR
+** Updated to allow configuration of $.hubConnection **
 
 ## Features:
  1. 100% typescript
@@ -42,6 +43,10 @@ export function createConfig(): SignalRConfiguration {
   c.executeEventsInZone = true; // optional, default is true
   c.executeErrorsInZone = false; // optional, default is false
   c.executeStatusChangeInZone = true; // optional, default is true
+
+  // This version
+  c.hubOptions = {useDefaultPath: true}; // optional, default is true
+
   return c;
 }
 
