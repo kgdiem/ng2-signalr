@@ -1,7 +1,8 @@
-
 import { ConnectionTransports } from './connection/connection.transports';
 import { ConnectionTransport } from './connection/connection.transport';
 import { IConnectionOptions } from './connection/connection.options';
+
+import { HubOptions } from './connection/hub.options';
 
 export class SignalRConfiguration implements IConnectionOptions {
 
@@ -38,6 +39,8 @@ export class SignalRConfiguration implements IConnectionOptions {
     /** Allows you to run the status change in callback outside ngZone */
     public executeStatusChangeInZone?: boolean;
 
+    public hubOptions?: HubOptions;
+
     constructor() {
        this.hubName = null;
        this.logging = false;
@@ -50,5 +53,6 @@ export class SignalRConfiguration implements IConnectionOptions {
        this.executeErrorsInZone = false;
        this.executeStatusChangeInZone = true;
        this.pingInterval = 300000;
+       this.hubOptions = {useDefaultPath: true};
     }
 }

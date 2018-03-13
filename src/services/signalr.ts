@@ -32,7 +32,7 @@ export class SignalR {
         this.logConfiguration(configuration);
 
         // create connection object
-        const jConnection = this._jHubConnectionFn(configuration.url);
+        let jConnection = this._jHubConnectionFn(configuration.url, this._configuration.hubOptions);
         jConnection.logging = configuration.logging;
         jConnection.qs = configuration.qs;
 
