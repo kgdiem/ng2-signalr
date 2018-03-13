@@ -29,10 +29,16 @@ function getJquery(): any {
 }
 
 @NgModule({
-    providers: [{
-        provide: SignalR,
-        useValue: SignalR
-    }]
+    providers: [
+        {
+            provide: SignalR,
+            useValue: SignalR
+        },
+        {
+            provide: NgZone,
+            useFactory: () => new NgZone({})
+        }
+    ]
 })
 export class SignalRModule {
     public static forRoot(getSignalRConfiguration: () => void): ModuleWithProviders {
