@@ -36,7 +36,7 @@ function getJquery(): any {
         },
         {
             provide: NgZone,
-            useFactory: () => new NgZone({})
+            useClass: NgZone
         }
     ]
 })

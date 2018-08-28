@@ -1,7 +1,7 @@
 {
-  "name": "ng2-signalr",
+  "name": "ng2-signalr-patched",
   "version": "6.1.0",
-  "description": "angular2 signalr library",
+  "description": "angular2 signalr library patched to provide additional configs to jQuery SignalR",
   "main": "bundles/ng2-signalr.umd.js",
   "module": "index.js",
   "scripts": {
