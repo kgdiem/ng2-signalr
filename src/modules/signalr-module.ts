@@ -33,10 +33,6 @@ function getJquery(): any {
         {
             provide: SignalR,
             useValue: SignalR
-        },
-        {
-            provide: NgZone,
-            useClass: NgZone
         }
     ]
 })

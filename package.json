@@ -1,6 +1,6 @@
 {
   "name": "ng2-signalr-patched",
-  "version": "6.1.0",
+  "version": "6.1.2",
   "description": "angular2 signalr library patched to provide additional configs to jQuery SignalR",
   "main": "bundles/ng2-signalr.umd.js",
   "module": "index.js",
@@ -15,15 +15,15 @@
     "cover": "istanbul cover node_modules/jasmine/bin/jasmine.js"
   },
   "typings": "index.d.ts",
-  "author": "Hannes Neukermans",
+  "author": "Hannes Neukermans / Kevin Diem",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HNeukermans/ng2-signalR.git"
+    "url": "git+https://github.com/kgdiem/ng2-signalR.git"
   },
   "bugs": {
     "url": "https://github.com/robisim74/ng2-signalr/issues"
   },
-  "homepage": "https://github.com/HNeukermans/ng2-signalR",
+  "homepage": "https://github.com/kgdiem/ng2-signalR",
   "keywords": [
     "signalR",
     "typescript",
